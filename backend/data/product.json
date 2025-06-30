@@ -1,0 +1,62 @@
+[
+    {
+        "image": [
+            "orange-1.jpg",
+            "white-1.jpg"
+        ],
+        "name": "Ribbed Tank Top",
+        "price": "16.95",
+        "para": "Button-up shirt sleeves and a relaxed silhouette. It’s tailored with drapey, crinkle-texture fabric that’s made from LENZING™ ECOVERO™ Viscose — responsibly sourced wood-based fibres produced through a process that reduces...",
+        "qty": 5
+    },
+    {
+        "image": [
+            "beige-2.jpg",
+            "beige-3.jpg"
+        ],
+        "name": "Ribbed Tank Top",
+        "price": "16.95",
+        "para": "Button-up shirt sleeves and a relaxed silhouette. It’s tailored with drapey, crinkle-texture fabric that’s made from LENZING™ ECOVERO™ Viscose — responsibly sourced wood-based fibres produced through a process that reduces...",
+        "qty": 5
+    },
+    {
+        "image": [
+            "black-1.jpg",
+            "black-2.jpg"
+        ],
+        "name": "Ribbed Tank Top",
+        "price": "16.95",
+        "para": "Button-up shirt sleeves and a relaxed silhouette. It’s tailored with drapey, crinkle-texture fabric that’s made from LENZING™ ECOVERO™ Viscose — responsibly sourced wood-based fibres produced through a process that reduces...",
+        "qty": 5
+    },
+    {
+        "image": [
+            "black-3.jpg",
+            "black-4.jpg"
+        ],
+        "name": "Ribbed Tank Top",
+        "price": "16.95",
+        "para": "Button-up shirt sleeves and a relaxed silhouette. It’s tailored with drapey, crinkle-texture fabric that’s made from LENZING™ ECOVERO™ Viscose — responsibly sourced wood-based fibres produced through a process that reduces...",
+        "qty": 5
+    },
+    {
+        "image": [
+            "black-26.jpg",
+            "black-27.jpg"
+        ],
+        "name": "Ribbed Tank Top",
+        "price": "16.95",
+        "para": "Button-up shirt sleeves and a relaxed silhouette. It’s tailored with drapey, crinkle-texture fabric that’s made from LENZING™ ECOVERO™ Viscose — responsibly sourced wood-based fibres produced through a process that reduces...",
+        "qty": 5
+    },
+    {
+        "image": [
+            "blue-7.jpg",
+            "blue-8.jpg"
+        ],
+        "name": "Ribbed Tank Top",
+        "price": "16.95",
+        "para": "Button-up shirt sleeves and a relaxed silhouette. It’s tailored with drapey, crinkle-texture fabric that’s made from LENZING™ ECOVERO™ Viscose — responsibly sourced wood-based fibres produced through a process that reduces...",
+        "qty": 5
+    }
+]
