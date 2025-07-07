@@ -7,15 +7,12 @@ import { useDispatch, useSelector } from 'react-redux';
 export const Search = () => {
     const [startInit, setStartInit] = useState(true);
     const [startRender, setStartRender] = useState(false);
-    const [error, setError] = useState({});
-    const [rerender, setRerender] = useState(false);
     const dispatchappStore = useDispatch();
     const getAppStoreData = useSelector((state) => state.appstate.login_info);
     const [viewList, setViewList] = useState(2);
     const [hoverImage, setHoverImage] = useState("");
     const { responseData, isLoadingApi, apiKey, fetchError, serverRequest } = useFetch();
     const tbl_product = useRef();
-    const navigate = useNavigate();
 
     function fnViewProductRequest() {
         let _getBody = {
@@ -31,57 +28,6 @@ export const Search = () => {
         serverRequest(serverRequestParam);
         setStartInit(false);
     }
-
-    const product = [
-        {
-            id: 1,
-            title: 'Ribbed Tank Top',
-            price: '$16.95',
-            description:
-                'Button-up shirt sleeves and a relaxed silhouette. It’s tailored with drapey, crinkle-texture fabric that’s made from LENZING™ ECOVERO™ Viscose — responsibly sourced wood-based fibres produced through a process that reduces...',
-            images: [
-                require("../assets/images/products/orange-1.jpg"),
-                require("../assets/images/products/white-1.jpg"),
-            ],
-            isWishlist: false,
-        },
-        {
-            id: 2,
-            title: 'Ribbed Tank Top',
-            price: '$16.95',
-            description:
-                'Button-up shirt sleeves and a relaxed silhouette. It’s tailored with drapey, crinkle-texture fabric that’s made from LENZING™ ECOVERO™ Viscose — responsibly sourced wood-based fibres produced through a process that reduces...',
-            images: [
-                require("../assets/images/products/orange-1.jpg"),
-                require("../assets/images/products/white-1.jpg"),
-            ],
-            isWishlist: false,
-        },
-        {
-            id: 3,
-            title: 'Ribbed Tank Top',
-            price: '$16.95',
-            description:
-                'Button-up shirt sleeves and a relaxed silhouette. It’s tailored with drapey, crinkle-texture fabric that’s made from LENZING™ ECOVERO™ Viscose — responsibly sourced wood-based fibres produced through a process that reduces...',
-            images: [
-                require("../assets/images/products/orange-1.jpg"),
-                require("../assets/images/products/white-1.jpg"),
-            ],
-            isWishlist: false,
-        },
-        {
-            id: 4,
-            title: 'Ribbed Tank Top',
-            price: '$16.95',
-            description:
-                'Button-up shirt sleeves and a relaxed silhouette. It’s tailored with drapey, crinkle-texture fabric that’s made from LENZING™ ECOVERO™ Viscose — responsibly sourced wood-based fibres produced through a process that reduces...',
-            images: [
-                require("../assets/images/products/orange-1.jpg"),
-                require("../assets/images/products/white-1.jpg"),
-            ],
-            isWishlist: false,
-        },
-    ];
 
     function initiControl() {
         tbl_product.current = responseData.value.map(item => ({
@@ -112,7 +58,6 @@ export const Search = () => {
         dispatchappStore(setproductinfo(
             tbl_product.current[index]
         ))
-
     }
 
     useEffect(() => {
@@ -252,7 +197,6 @@ export const Search = () => {
                     </div>
                 </div >
             }
-
         </>
     )
 }

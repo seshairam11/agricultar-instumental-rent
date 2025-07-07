@@ -2,11 +2,6 @@ import Slider from '../ComponentOP/Slider'
 import slide1 from '../assets/images/instruments/getty-images-iMeLzTX9xA0-unsplash.jpg';
 import slide2 from '../assets/images/instruments/agricultural-equipment-suppliers-in-usa.webp';
 import slide3 from '../assets/images/instruments/tractor1.jpg';
-import pod1 from '../assets/images/collections/personalized-pod-1.jpg';
-import pod2 from '../assets/images/collections/personalized-pod-2.jpg';
-import pod3 from '../assets/images/collections/personalized-pod-3.jpg';
-import pod4 from '../assets/images/collections/personalized-pod-4.jpg';
-import SmallCards from '../ComponentOP/SmallCards';
 import Product from '../ComponentOP/Product';
 import useFetch from '../ApiOP/useFetch';
 import React, { useEffect, useRef, useState } from 'react'
@@ -87,83 +82,6 @@ export const Home = () => {
             reviews: '300K Five-Star Reviews',
         },
     ];
-
-    const products = [
-        {
-            id: 1,
-            title: "Christmas Ornament",
-            originalPrice: "$248.00",
-            salePrice: "$199.00",
-            image: "../assets/images/products/personalized-pod-1.jpg",
-            hoverImage: "images/products/personalized-pod-2.jpg",
-            discount: "-20%",
-        },
-        {
-            id: 1,
-            title: "Christmas Ornament",
-            originalPrice: "$248.00",
-            salePrice: "$199.00",
-            image: "../assets/images/products/personalized-pod-1.jpg",
-            hoverImage: "images/products/personalized-pod-2.jpg",
-            discount: "-20%",
-        },
-        {
-            id: 1,
-            title: "Christmas Ornament",
-            originalPrice: "$248.00",
-            salePrice: "$199.00",
-            image: "../assets/images/products/personalized-pod-1.jpg",
-            hoverImage: "images/products/personalized-pod-2.jpg",
-            discount: "-20%",
-        },
-        {
-            id: 1,
-            title: "Christmas Ornament",
-            originalPrice: "$248.00",
-            salePrice: "$199.00",
-            image: "../assets/images/products/personalized-pod-1.jpg",
-            hoverImage: "images/products/personalized-pod-2.jpg",
-            discount: "-20%",
-        },
-        {
-            id: 1,
-            title: "Christmas Ornament",
-            originalPrice: "$248.00",
-            salePrice: "$199.00",
-            image: "../assets/images/products/personalized-pod-1.jpg",
-            hoverImage: "images/products/personalized-pod-2.jpg",
-            discount: "-20%",
-        },
-        {
-            id: 1,
-            title: "Christmas Ornament",
-            originalPrice: "$248.00",
-            salePrice: "$199.00",
-            image: "../assets/images/products/personalized-pod-1.jpg",
-            hoverImage: "images/products/personalized-pod-2.jpg",
-            discount: "-20%",
-        },
-        {
-            id: 1,
-            title: "Christmas Ornament",
-            originalPrice: "$248.00",
-            salePrice: "$199.00",
-            image: "../assets/images/products/personalized-pod-1.jpg",
-            hoverImage: "images/products/personalized-pod-2.jpg",
-            discount: "-20%",
-        },
-        {
-            id: 1,
-            title: "Christmas Ornament",
-            originalPrice: "$248.00",
-            salePrice: "$199.00",
-            image: "../assets/images/products/personalized-pod-1.jpg",
-            hoverImage: "images/products/personalized-pod-2.jpg",
-            discount: "-20%",
-        },
-        // Add more products as needed
-    ];
-
     return (
         <>
             {startRender &&

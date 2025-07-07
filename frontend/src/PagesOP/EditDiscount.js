@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 import useFetch from '../ApiOP/useFetch';
-import { OPValidations } from '../CommonOP/OPValidations';
 import { OPReadOnlyListTable } from '../ComponentOP/OPReadOnlyTable';
 import { OPTextBox } from '../ComponentOP/OPTextBox';
 import { OPButton } from '../ComponentOP/OPButton';

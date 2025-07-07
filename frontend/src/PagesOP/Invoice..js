@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 import { OPReadOnlyListTable } from "../ComponentOP/OPReadOnlyTable";
-import { OPValidations } from "../CommonOP/OPValidations";
 import { useSelector } from "react-redux";
 import useFetch from "../ApiOP/useFetch";
 
@@ -15,7 +14,6 @@ export default function Invoice() {
     const tbl_invoice = useRef({})
 
     const getAppStoreData = useSelector((state) => state.appstate.login_info);
-    const getAppStoreInvoice = useSelector((state) => state.appstate.invoice);
     const { responseData, isLoadingApi, apiKey, fetchError, serverRequest } = useFetch();
 
     function fnViewMenuRequest() {
@@ -191,7 +189,6 @@ export default function Invoice() {
                                 </section>
                             }
                         </>
-
                         :
                         <section className="invoice-section">
                             <div className="cus-container2">
@@ -301,7 +298,6 @@ export default function Invoice() {
                     }
                 </>
             }
-
         </>
     );
 }
