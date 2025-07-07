@@ -6,6 +6,7 @@ const connectDatabase = require('./config/connectDatabase');
 const http = require('http');
 const socketIo = require('socket.io');
 const router = require("./router/RoutesGrops");
+import ServerlessHttp from "serverless-http";
 
 // Initialize the Express app
 const app = express();
@@ -54,6 +55,13 @@ io.on('connection', (socket) => {
 });
 
 // Start the server
-server.listen(process.env.PORT, () => {
-    console.log(`Listening on port ${process.env.PORT} in ${process.env.NODE_ENV}`);
-});
+// server.listen(process.env.PORT, () => {
+//     console.log(`Listening on port ${process.env.PORT} in ${process.env.NODE_ENV}`);
+// });
+
+const handler = ServerlessHttp(app);
+
+module.exports.handler = async (event, context) => {
+    const result = await handler(event, context);
+    return result;
+};   
