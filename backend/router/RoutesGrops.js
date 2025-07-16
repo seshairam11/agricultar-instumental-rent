@@ -15,6 +15,6 @@ router.route('/admin-addproduct').post(AddProductAdmin);
 router.route('/addInvoice').post(AddInvoice);
 router.route('/viewInvoice').post(ViewInvoice);
 router.route('/admin-viewInvoice').post(ViewInvoiceAdmin);
-router.route('/test').post(testController);
+router.route('/test').get(testController);
 
 module.exports = router;
