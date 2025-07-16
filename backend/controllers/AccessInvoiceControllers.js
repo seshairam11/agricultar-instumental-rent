@@ -32,6 +32,7 @@ exports.ViewInvoiceAdmin = async (req, res, next) => {
         });
     }
 }
+
 exports.AddInvoice = async (req, res, next) => {
     const Invoice = req.body;
     try {

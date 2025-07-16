@@ -6,7 +6,6 @@ const connectDatabase = require('./config/connectDatabase');
 const http = require('http');
 const socketIo = require('socket.io');
 const router = require("./router/RoutesGrops");
-import ServerlessHttp from "serverless-http";
 
 // Initialize the Express app
 const app = express();
@@ -36,7 +35,7 @@ app.use('/api/v1/', router);
 // Configure Socket.IO with CORS
 const io = socketIo(server, {
     cors: {
-        origin: 'http://localhost:3000',  // Allow the exact origin without trailing slash
+        origin: '*',  // Allow the exact origin without trailing slash
         methods: ['GET', 'POST'],
         credentials: true,  // Enable credentials (cookies, etc.)
     },
@@ -55,13 +54,6 @@ io.on('connection', (socket) => {
 });
 
 // Start the server
-// server.listen(process.env.PORT, () => {
-//     console.log(`Listening on port ${process.env.PORT} in ${process.env.NODE_ENV}`);
-// });
-
-const handler = ServerlessHttp(app);
-
-module.exports.handler = async (event, context) => {
-    const result = await handler(event, context);
-    return result;
-};   
+server.listen(process.env.PORT, () => {
+    console.log(`Listening on port ${process.env.PORT} in ${process.env.NODE_ENV}`);
+});

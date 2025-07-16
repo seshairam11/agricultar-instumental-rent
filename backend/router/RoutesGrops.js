@@ -2,6 +2,7 @@ const express = require('express');
 const { signupController, loginController } = require('../controllers/AccessControllers');
 const { ViewProductAdmin, UpdateProductAdmin, FindDiscount, AddProductAdmin } = require('../controllers/AccessProductController');
 const { ViewInvoiceAdmin, AddInvoice, ViewInvoice } = require('../controllers/AccessInvoiceControllers');
+const { testController } = require('../controllers/TestController');
 
 const router = express.Router()
 
@@ -14,5 +15,6 @@ router.route('/admin-addproduct').post(AddProductAdmin);
 router.route('/addInvoice').post(AddInvoice);
 router.route('/viewInvoice').post(ViewInvoice);
 router.route('/admin-viewInvoice').post(ViewInvoiceAdmin);
+router.route('/test').post(testController);
 
 module.exports = router;
