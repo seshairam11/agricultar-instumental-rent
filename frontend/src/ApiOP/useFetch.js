@@ -4,7 +4,7 @@ const useFetch = () => {
   const [isLoadingApi, setisLoading] = useState(false);
   const [fetchError, setFetchError] = useState(null);
   const [apiKey, setApiKey] = useState(null);
-  const baseURI = "https://agricultare-instument-backend.netlify.app";
+  const baseURI = "https://agricultar-instumental-rent.onrender.com";
 
 
 
